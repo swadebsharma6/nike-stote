@@ -1,4 +1,5 @@
-import PopularProductCard from "../components";
+
+import PopularProductCard from "../components/PopularProductCard";
 import { products } from "../constance";
 
 
@@ -15,10 +16,9 @@ const PopularProducts = () => {
             {
                 products.map((product, idx) =>(
                   <PopularProductCard
-                   key={idx}
+                  key={idx}
                    product={product}
-                   
-                   ></PopularProductCard>  
+                  ></PopularProductCard>
                 ))
             }
           </div>
